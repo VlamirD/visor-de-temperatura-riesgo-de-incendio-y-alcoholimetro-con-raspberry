@@ -42,3 +42,72 @@ body {
     background: white ;
     color: black ;
 }
+#listar div.bg-cian{
+    background-color: cyan;
+    height: 200px;
+}
+#listar div.bg-cian{
+    
+}
+#listar1 div.bg-cian>img,
+#listar div.bg-cian>img{
+    position: absolute;
+    width: 20%;
+    height: 40%;
+    right: 10px;
+    top: 20%;
+}
+#listar1 div.bg-cian>p,
+#listar div.bg-cian>p{
+    color: #fff;
+}
+#listar1 div.bg-cian>p:nth-of-type(2),
+#listar div.bg-cian>p:nth-of-type(1){
+    font-size: 1.5em;
+    text-align: left;
+    padding-left: 20px;
+    box-sizing: border-box;
+    font-family: arial;
+}
+#listar1 div.bg-cian>p:nth-of-type(2),
+#listar div.bg-cian>p:nth-of-type(2){
+    font-size: 1.5em;
+    text-align: left;
+    padding-left: 20px;
+    box-sizing: border-box;
+    font-family: arial;
+}
+#listar1 div.bg-cian>p:nth-of-type(3),
+#listar div.bg-cian>p:nth-of-type(3){
+    font-size: 1.5em;
+    text-align: right;
+    padding-right: 10px;
+    box-sizing: border-box;
+    font-family: arial;
+}
+#listar1 div.bg-cian{
+    background-color: peru;
+}
+.bg-header{
+    
+}
+.bg-header>img{
+    position: absolute;
+    width: 50px;
+    top: 5px;
+}
+.bg-header>img:nth-of-type(1){
+    left: 20px;
+}
+.bg-header>img:nth-of-type(2){
+    right: 20px;
+}
+#listar div.bg-cian>a,
+#listar1 div.bg-cian>a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}

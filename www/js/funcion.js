@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var $server='http://localhost:80/xampp/appTemperatura/www/';
+    var $server='http://localhost:80/xampp/Proyecto/www/';
     $('#pagina1').on('load',function(){
             $.ajax({
             type:"get",
