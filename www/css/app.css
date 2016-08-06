@@ -43,25 +43,41 @@ body {
     color: black ;
 }
 #listar div.bg-cian{
-    background-color: cyan;
+    background-color:#1482E0 ;
     height: 200px;
+}
+#detalles div.bg-cian{
+    background-color: darkgray;
+    height: 400px;
+    top: 10%;
 }
 #listar div.bg-cian{
     
 }
+#detalles div.bg-cian>img,
 #listar1 div.bg-cian>img,
 #listar div.bg-cian>img{
     position: absolute;
-    width: 20%;
-    height: 40%;
+    width: 40%;
+    height: 70%;
     right: 10px;
-    top: 20%;
+    top: 0%;
+}
+#detalles div.bg-cian>p{
+    color:#1482E0 ;
+}
+#detalles div.bg-cian>p:nth-of-type(1){
+    font-size: 1.5em;
+    text-align: left;
+    padding-left: 20px;
+    box-sizing: border-box;
+    font-family: arial;
 }
 #listar1 div.bg-cian>p,
 #listar div.bg-cian>p{
     color: #fff;
 }
-#listar1 div.bg-cian>p:nth-of-type(2),
+#listar1 div.bg-cian>p:nth-of-type(1),
 #listar div.bg-cian>p:nth-of-type(1){
     font-size: 1.5em;
     text-align: left;
@@ -69,6 +85,7 @@ body {
     box-sizing: border-box;
     font-family: arial;
 }
+#detalles div.bg-cian>p:nth-of-type(2),
 #listar1 div.bg-cian>p:nth-of-type(2),
 #listar div.bg-cian>p:nth-of-type(2){
     font-size: 1.5em;
@@ -77,16 +94,24 @@ body {
     box-sizing: border-box;
     font-family: arial;
 }
+#detalles div.bg-cian>p:nth-of-type(3){
+    font-size: 2em;
+    text-align: right;
+    padding-right: 10%;
+    margin-top: 20%;
+    box-sizing: border-box;
+    font-family: arial;
+}
 #listar1 div.bg-cian>p:nth-of-type(3),
 #listar div.bg-cian>p:nth-of-type(3){
     font-size: 1.5em;
     text-align: right;
-    padding-right: 10px;
+    padding-right: 30px;
     box-sizing: border-box;
     font-family: arial;
 }
 #listar1 div.bg-cian{
-    background-color: peru;
+    background-color: #1482E0;
 }
 .bg-header{
     

@@ -23,6 +23,17 @@ $(document).ready(function(){
             }
         });
     }
+    function detalles(dato){
+        $.ajax({
+            type:"get",
+            dataType:'html',
+            url:$server+"/conecta.php",
+            data:"valor=detalles",
+            success:function(data){
+                $('#detalles').html(data);
+            }
+        });
+    }
     function lista(dato){
         $.ajax({
             type:"get",
@@ -34,6 +45,18 @@ $(document).ready(function(){
             }
         });
     }
+    function listartemp(){
+        $.ajax({
+            type:"get",
+            dataType:'html',
+            url:$server+"/conecta.php",
+            data:"valor=listar"+5,
+            success:function(data){
+                $('#listar1').html(data);
+            }
+        });
+    }
+    detalles();
     listartemp();
     lista('');
 });
