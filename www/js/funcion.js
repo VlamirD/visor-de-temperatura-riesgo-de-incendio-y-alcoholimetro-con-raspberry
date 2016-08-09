@@ -1,44 +1,12 @@
+server='';
 $(document).ready(function(){
-    var $server='http://localhost:80/xampp/Proyecto/www/';
-    $('#pagina1').on('load',function(){
-            $.ajax({
-            type:"get",
-            dataType:'html',
-            url:$server+"/conecta.php",
-            data:"valor=actual",
-            success:function(data){
-                $('#actual').html();
-                intel.xdk.notification.alert('valor mostrado','aviso1','ok');
-            }
-        });
-    });
-    function listartemp(){
-        $.ajax({
-            type:"get",
-            dataType:'html',
-            url:$server+"/conecta.php",
-            data:"valor=listar"+5,
-            success:function(data){
-                $('#listar1').html(data);
-            }
-        });
-    }
-    function detalles(dato){
-        $.ajax({
-            type:"get",
-            dataType:'html',
-            url:$server+"/conecta.php",
-            data:"valor=detalles",
-            success:function(data){
-                $('#detalles').html(data);
-            }
-        });
-    }
+    //var $server='http://localhost/xampp/Proyecto/www/';
+    server='http://localhost/xampp/Proyecto/www/';
     function lista(dato){
         $.ajax({
             type:"get",
             dataType:'html',
-            url:$server+"/conecta.php",
+            url:server+"/conecta.php",
             data:"valor=listar"+dato,
             success:function(data){
                 $('#listar').html(data);
@@ -49,14 +17,28 @@ $(document).ready(function(){
         $.ajax({
             type:"get",
             dataType:'html',
-            url:$server+"/conecta.php",
+            url:server+"/conecta.php",
             data:"valor=listar"+5,
             success:function(data){
                 $('#listar1').html(data);
             }
         });
     }
-    detalles();
+    //detalles();
     listartemp();
     lista('');
 });
+function detalles(valor){
+        var id=$('#opcion'+valor).val();
+        //console.log(id);
+        //alert(""+id);
+        $.ajax({
+            type:"get",
+            dataType:'html',
+            url:server+"/conecta.php",
+            data:"atributo="+id+"&valor=especifico",
+            success:function(data){
+                $('#detalles').html(data);
+            }
+        });
+    }
