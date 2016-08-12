@@ -87,18 +87,21 @@ body {
 }
 #detalles div.bg-cian>p:nth-of-type(2),
 #listar1 div.bg-cian>p:nth-of-type(2),
-#listar div.bg-cian>p:nth-of-type(2){
+#listar div.bg-cian>p:nth-of-type(2),
+#detalles div.bg-cian>p:nth-of-type(3),
+#detalles div.bg-cian>p:nth-of-type(4),
+#detalles div.bg-cian>p:nth-of-type(5){
     font-size: 1.5em;
     text-align: left;
     padding-left: 20px;
     box-sizing: border-box;
     font-family: arial;
 }
-#detalles div.bg-cian>p:nth-of-type(3){
-    font-size: 2em;
+#detalles div.bg-cian>p:nth-of-type(6){
+     font-size: 1.5em;
     text-align: right;
-    padding-right: 10%;
-    margin-top: 20%;
+    margin-top: -55px;
+    padding-right:10%;
     box-sizing: border-box;
     font-family: arial;
 }
